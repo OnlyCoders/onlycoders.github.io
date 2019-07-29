@@ -367,7 +367,7 @@
 	background: linear-gradient(135deg, #de496d 0, #ab49de 100%);
 }
 
-#kreo {
+.kreo {
 	font-size: 6vh;
 	font-weight: bold;
 	color: #fff;
@@ -563,7 +563,7 @@
 	font-size: 3vh;
 	margin: 3% 0;
 }
-#firsttext {
+.firsttext {
 	height: 15%;
 	margin: 1% 20%;
 	resize: none;
@@ -575,7 +575,7 @@
 	border: none;
 	color: #767676;
 }
-#firsttext::placeholder {
+.firsttext::placeholder {
 	color: #767676;
 }
 #secondtext {
@@ -603,7 +603,7 @@
 	font-weight: bold;
 }
 #send:hover {
-	box-shadow: 0 0 10px 2px tomato;
+	box-shadow: 0 0 5px 2px tomato;
 	cursor: pointer;
 }
 .fourthSectionContentTextContact {
@@ -617,27 +617,180 @@
 	margin: 10% 0;
 	margin-bottom: 2%;
 }
+
 /**/
-
-@media (min-width:767.98px) {
-	.navbar {
-		background: transparent !important;
-	}
-}
-
 @media (max-width:767.98px) {
-	.navbar {
-		background: transparent !important;
-	}
+	
 	.thirdSectionContentText {
 		margin-top: 24px;
 		text-align: center;
 	}
-	.buttonOnThird {
-		margin: auto;
-		padding: 2% 6%;
-	}
+	
+}
+/*== Адаптация == */
+@media screen and (max-width: 1024px){ 
+.clearbr {
+	display: none;
+}
+.navbar-header .navbar ul li a { 
+font-size: 15px; 
+} 
+
+.secondSectionContentText_2 { 
+font-size: 2.3vh 
+} 
+.secondSectionContentText_1 { 
+font-size: 2.4vh; 
+line-height: 20px; 
+} 
+.imageOfSite { 
+height: 240px; 
+width: 240px; 
+} 
+.thirdSectionContentText_2 { 
+font-size: 14px; 
+margin: 5px 0; 
+} 
+.buttonOnThird { 
+margin: 5px 0; 
+} 
+.clearbr { 
+display: none; 
+} 
+.firsttext, #secondtext { 
+margin: 1% 10%; 
+} 
+} 
+@media screen and (max-width: 767px) {
+br { 
+display: none; 
+} 
+.textInFirst { 
+	padding-top: 10%; 
+} 
+#buttonInFirst { 
+	margin-top: 5%; 
+} 
+.navbar { 
+	background: transparent !important; 
+} 
+.thirdSectionContentText{ 
+	margin-top: 24px; 
+} 
+.buttonOnThird{ 
+	padding: 2% 6%; 
+} 
+
+.thirdSectionContentAll { 
+	display: flex; 
+} 
+.secondSectionContentAll { 
+	margin: 5% 0; 
+} 
+
+.imageOfSite {
+	height: 170px;
+	width: 170px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.thirdSectionContentAll {
+	margin: 10% 0;
 }
 
-
+.buttonOnThird {
+	padding: 10px 10px !important;
+	margin: auto;
+	margin-top: 2%;
+	padding: 34px;
+}
+.kreo {
+	font-size: 4vh;
+	height: 50px;
+}
+#send {
+	width: 80%;
+	margin: 3% 10%;
+}
+.row {
+	margin: 0 !important;
+}
+@media screen and (max-width: 450px){
+	.fourthSectionContentText {
+		font-size: 14px;
+	}
+	.textInFirst {
+		padding-top: 38%;
+	}
+	.col-4 {
+		max-width: 50%;
+	}
+	.firsttext {
+		margin: 5%;
+		width: 90%;
+		font-size: 13px;
+		height: 20%;
+	}
+	#secondtext {
+		margin: 5%;
+		width: 90%;
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 400px){
+	.textInFirst {
+		padding-top: 37%;
+	}
+	.firsttext {
+		margin: 2%;
+		width: 96%;
+		font-size: 13px;
+		height: 20%;
+	}
+	#secondtext {
+		margin: 2%;
+		width: 96%;
+		font-size: 12px;
+	}
+	
+	#send {
+		width: 90%;
+		margin: 3% 5%;
+	}
+}
+@media screen and (max-width: 350px){
+	.firsttext {
+		margin: 3% 0%;
+		width: 100%;
+		font-size: 11px;
+		height: 20%;
+	}
+	#secondtext {
+		margin: 3% 0%;
+		width: 100%;
+		font-size: 11px;
+	}
+	#send {
+		width: 100%;
+		margin: 3% 0%;
+	}
+}
+@media screen and (max-width: 335px){
+	.buttonOnThird {
+		padding: 10px 5px !important;
+		margin: auto;
+		margin-top: 2%;
+		padding: 40px;
+}
+#secondtext {
+		margin: 3% 0%;
+		width: 100%;
+		font-size: 9px;
+	}
+	#send {
+		font-size: 14px;
+	}
+}
 /*# sourceMappingURL=./style.css.map */
