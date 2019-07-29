@@ -699,7 +699,9 @@ display: none;
 .thirdSectionContentAll {
 	margin: 10% 0;
 }
-
+/* .offset-2 {
+	margin-left: 10% !important;
+} */
 .buttonOnThird {
 	padding: 10px 10px !important;
 	margin: auto;
@@ -748,11 +750,13 @@ display: none;
 		width: 96%;
 		font-size: 13px;
 		height: 20%;
+		border-radius: 10px;
 	}
 	#secondtext {
 		margin: 2%;
 		width: 96%;
 		font-size: 12px;
+		border-radius: 10px;
 	}
 	
 	#send {
