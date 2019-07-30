@@ -49,6 +49,7 @@
 	align-items: center;
 	font-family: GothamPro;
 	margin: 0 2%;
+	margin-left: 0;
 }
 .sources {
 	width: 50%;
@@ -63,7 +64,7 @@
 .sources a {
 	margin: 0 5%;
 	transition: .2s;
-	border-radius: 50%;
+	border-radius: 10px;
 	background-color: #E5E5E5;
 
 }
