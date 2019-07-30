@@ -1,8 +1,122 @@
 * {
 	margin: 0;
+	padding: 0;
 	font-family: sans-serif;
 }
+@font-face {
+	font-family: GothamPro;
+	src: url(../fonts/GothamPro.ttf);
+}
+
 .firstSection {
-	height: 100vh;
-	background-color: #c5c5c5;
+	height: 150vh;
+
+	
+}
+.back {
+	display: block;
+	font-family: GothamPro;
+	font-size: 2.5vh;
+	font-weight: bold;
+	margin: 1.5%;
+	padding: 3px;
+	color: #898989;
+	text-decoration: none;
+}
+.back:hover {
+	text-decoration: none;
+	color: #898989;
+}
+
+.aboutSite {
+	height: 100%;
+	margin: 5% 5%;
+	margin-bottom: 3%;
+	
+	overflow: hidden;
+}
+.topPanel {
+	height: 10%;
+	
+	display: flex;
+}
+.text {
+	height: 100%;
+	width: 50%;
+	font-size: 5vh;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	font-family: GothamPro;
+	margin: 0 2%;
+}
+.sources {
+	width: 50%;
+	margin-right: 0;
+	margin-left: 35%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20%;
+	height: 100%;
+}
+.sources a {
+	margin: 0 5%;
+	transition: .2s;
+	border-radius: 50%;
+	background-color: #E5E5E5;
+
+}
+a:hover {
+	text-decoration: none !important;
+}
+.sources a i {
+	font-size: 4vh;
+	color: #606060;
+	height: 52px;
+	width: 52px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .2s;
+}
+.sources a:hover  {
+	box-shadow: 0 0 5px 2px #E5E5E5;
+	transition: .2s;
+}
+.bx-wrapper {
+	border: none !important;
+}
+.bxslider li img {
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+}
+.abouttext {
+	margin: 10% 0;
+	margin-bottom: 0%;
+	font-family: GothamPro;
+	font-size: 3vh;
+}
+@media screen and (max-width: 766px){
+	.sources {
+		margin-left: 25%;
+	}
+}
+@media screen and (max-width: 600px){
+	.sources {
+		margin-left: 20%;
+	}
+}
+@media screen and (max-width: 400px){
+ 	.sources a i {
+ 		font-size: 3vh;
+ 		height: 42px;
+		width: 42px;
+ 	}	
+}
+@media screen and (max-width: 355px){
+	.text {
+		font-size: 4vh;
+	}
 }
