@@ -791,6 +791,10 @@ display: none;
 		width: 90%;
 		font-size: 12px;
 	}
+	.aVkImage i {
+		font-size: 7vh;
+		margin: 35% 50%;
+	}
 }
 @media screen and (max-width: 400px){
 	
@@ -813,6 +817,12 @@ display: none;
 		margin: 3% 5%;
 	}
 
+}
+@media screen and (max-width: 390px){
+	.aVkImage i {
+		font-size: 6vh;
+		margin: 40% 50%;
+	}
 }
 @media screen and (max-width: 350px){
 	.col-4 {
