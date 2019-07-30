@@ -3,6 +3,18 @@
 	margin: 0;
 	padding: 0;
 }
+
+.Progress {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 0%;
+	height: 5px;
+	background-color: #872D08;
+	z-index: 60;
+	opacity: .7;
+}
+
 .Anchor {
 	position: absolute;
 	position: fixed;
