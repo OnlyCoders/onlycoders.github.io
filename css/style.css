@@ -760,6 +760,10 @@ display: none;
 		font-size: 12px;
 	}
 @media screen and (max-width: 450px){
+	.fourthSectionContent_2 {
+		padding-top: 20px;
+		padding-left: 0;
+	}
 	.secondSectionContentImage {
 		height: 140px;
 	}
@@ -808,6 +812,7 @@ display: none;
 		width: 90%;
 		margin: 3% 5%;
 	}
+
 }
 @media screen and (max-width: 350px){
 	.col-4 {
@@ -830,6 +835,10 @@ display: none;
 	}
 }
 @media screen and (max-width: 335px){
+	.col-6, .col-md-10 {
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
 	.buttonOnThird {
 		padding: 10px 5px !important;
 		margin: auto;
@@ -839,7 +848,7 @@ display: none;
 #secondtext {
 		margin: 3% 0%;
 		width: 100%;
-		font-size: 9px;
+		font-size: 11px;
 	}
 	#send {
 		font-size: 14px;
