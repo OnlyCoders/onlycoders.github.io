@@ -57,7 +57,9 @@
 	right: 0;
 	top: 0;
 }
-
+#notclearbr {
+	display: none;
+}
 .navbar-header .navbar {
 	z-index: 50;
 }
@@ -424,11 +426,9 @@
 	transform: skewX(-45deg);
 	top: 0;
 }
-.buttonOnThird:hover {
-	transition: .4s;
-	border: 3px solid #212529;
+.btn:hover {
+	color: #d4d4d4 !important;
 }
-
 .buttonOnThird:hover:before {
 	left: 160%;
 	transition: .4s ease-in-out;
@@ -629,7 +629,7 @@
 /**/
 @media (max-width:767.98px) {
 	
-	.thirdSectionContentText {
+	.thirdSectionContentText_1 {
 		margin-top: 24px;
 		text-align: center;
 	}
@@ -637,8 +637,11 @@
 }
 /*== Адаптация == */
 @media screen and (max-width: 1024px){ 
+	 p.kreo {
+		margin-bottom: 0 !important;
+	}
 .clearbr {
-	display: none;
+	display: block;
 }
 .navbar-header .navbar ul li a { 
 font-size: 15px; 
@@ -670,9 +673,21 @@ margin: 1% 10%;
 } 
 } 
 @media screen and (max-width: 767px) {
-br { 
+	.fourthSectionContent_1 {
+		width: 60%;
+	}
+	.fourthSectionContent_2 {
+		width: 40%;
+	}
+.clearbr { 
 display: none; 
+}
+#notclearbr {
+	display: block;
 } 
+#cloud {
+	text-align: center;
+}
 .navbar-header .navbar ul li a::before {
 	display: none;
 }
@@ -721,20 +736,39 @@ display: none;
 }
 .kreo {
 	font-size: 4vh;
-	height: 50px;
+	height: 38px !important;
+}
+#cloud {
+	height: 70px !important;
 }
 #send {
-	width: 80%;
-	margin: 3% 10%;
+	width: 90%;
+	margin: 3% 2%;
 }
 .row {
 	margin: 0 !important;
 }
+.firsttext {
+		margin: 1%;
+		width: 90%;
+		font-size: 12px;
+		height: 20%;
+	}
+	#secondtext {
+		margin: 1%;
+		width: 90%;
+		font-size: 12px;
+	}
 @media screen and (max-width: 450px){
+	.secondSectionContentImage {
+		height: 140px;
+	}
 	
-
 	.fourthSectionContentText {
-		font-size: 14px;
+		font-size: 13px;
+	}
+	.fourthSectionContentTextContact {
+		font-size: 12px;
 	}
 	.textInFirst {
 		padding-top: 8%;
@@ -743,15 +777,15 @@ display: none;
 		max-width: 50%;
 	}
 	.firsttext {
-		margin: 5%;
+		margin: 3%;
 		width: 90%;
-		font-size: 10px;
+		font-size: 12px;
 		height: 20%;
 	}
 	#secondtext {
-		margin: 5%;
+		margin: 3%;
 		width: 90%;
-		font-size: 10px;
+		font-size: 12px;
 	}
 }
 @media screen and (max-width: 400px){
@@ -778,6 +812,9 @@ display: none;
 	}
 }
 @media screen and (max-width: 350px){
+	.col-4 {
+		max-width: 70% !important;
+	}
 	.firsttext {
 		margin: 3% 0%;
 		width: 100%;
@@ -799,7 +836,7 @@ display: none;
 		padding: 10px 5px !important;
 		margin: auto;
 		margin-top: 2%;
-		padding: 40px;
+		padding: 50px;
 }
 #secondtext {
 		margin: 3% 0%;
