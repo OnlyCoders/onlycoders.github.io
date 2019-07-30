@@ -39,8 +39,7 @@ jQuery(document).ready(function(){
 			let object = document.getElementById('projects');
 			let position = object.getBoundingClientRect();
 			let y = Math.floor(position.y);
-				console.log(y);
-			if (y <= -100){
+				if (y <= -100){
 				let anchor = document.getElementById("Anchor");
 				anchor.style.transform = 'scale(1)';
 			} else {
@@ -66,3 +65,7 @@ function scrollSlow(id){
 	}, 500);
 	return false;
 }	 
+
+	function ChangePadding(){
+		$('.textInFirst').toggleClass('textInFirst_menu');
+	}
