@@ -845,4 +845,10 @@ display: none;
 		font-size: 14px;
 	}
 }
+@media screen and (max-width: 320px){
+	.col-10, .col-10 {
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
+}
 /*# sourceMappingURL=./style.css.map */
