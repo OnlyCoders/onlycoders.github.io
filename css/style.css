@@ -789,9 +789,7 @@ display: none;
 	}
 }
 @media screen and (max-width: 400px){
-	.textInFirst {
-		padding-top: 37%;
-	}
+	
 	.firsttext {
 		margin: 2%;
 		width: 96%;
