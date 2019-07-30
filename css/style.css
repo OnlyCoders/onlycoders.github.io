@@ -106,6 +106,7 @@
 .textInFirst {
 	text-align: center;
 	padding-top: 20%;
+	transition: .2s;
 }
 
 #textInFirst_1 {
@@ -691,9 +692,10 @@ display: none;
 .navbar-header .navbar ul li a::before {
 	display: none;
 }
-.textInFirst_if { 
-	padding-top: 10%; 
-} 
+.textInFirst_menu {
+	padding-top: 30%;
+	transition: .2s;
+}
 #buttonInFirst { 
 	margin-top: 5%; 
 } 
@@ -774,9 +776,7 @@ display: none;
 	.fourthSectionContentTextContact {
 		font-size: 12px;
 	}
-	.textInFirst {
-		padding-top: 8%;
-	}
+	
 	.col-4 {
 		max-width: 50%;
 	}
