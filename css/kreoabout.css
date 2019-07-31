@@ -65,15 +65,15 @@
 	margin: 0 5%;
 	transition: .2s;
 	border-radius: 10px;
-	background-color: #E5E5E5;
+	background-color: #C4c4c4;
 
 }
 a:hover {
 	text-decoration: none !important;
 }
 .sources a i {
-	font-size: 4vh;
-	color: #606060;
+	font-size: 3vh;
+	color: #FAFAFA;
 	height: 52px;
 	width: 52px;
 	display: flex;
@@ -93,6 +93,10 @@ a:hover {
 	width: 100%;
 	background-size: cover;
 }
+.bxslider:hover {
+	cursor: grab;
+}
+
 .abouttext {
 	margin: 10% 0;
 	margin-bottom: 0%;
