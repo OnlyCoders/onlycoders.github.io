@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>О проекте Kreo</title>
-	<meta charset="utf-8">
+  <title>Only Coders</title>
+
+  <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html">
   <meta name="description" content="Just a site where there is something that should be there.">
   <meta name='viewport' content='width=device-width,initial-scale=1'>
@@ -14,50 +16,247 @@
     rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/kreoabout.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
-
-  
+  <script src="js/main_script.js" defer></script>
 </head>
+
 <body>
+  <div class="Progress"></div>
+  <div class="Anchor" id="Anchor" onclick="scrollSlow('#top')">Top</div>
+  <header class="navbar-header" id="top">
+    <nav class="navbar navbar-expand-md py-2 navbar-dark">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" onclick="ChangePadding()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#" id="logo">OnlyCoders</a>
 
-	<section class="firstSection">
-		  <a href="index.html" class="back">Вернуться обратно</a>
-      <div class="aboutSite">
-        <div class="topPanel">
-          <div class="text">Kreo Layout</div>
-          <div class="sources">
-            <a href="#"><i class="fa fa-globe"></i></a>
-            <a href="#"><i class="fa fa-behance"></i></a>
-          </div>
-
-        </div><br>
-      <ul class="bxslider" id="bxslider">
-       <li><img src="img/kreo-slider-1.png" onmousedown="nameOf()"></li>
-       <li><img src="img/kreo-slider-2.png" onmousedown="nameOf()"></li>
-       <li><img src="img/kreo-slider-3.png" onmousedown="nameOf()"></li>
-      <li><img src="img/kreo-slider-4.png" onmousedown="nameOf()"></li>
-       <li><img src="img/kreo-slider-5.png" onmousedown="nameOf()"></li>
-</ul>
-      <div class="abouttext">
-        Этот сайт был сделан за несколько дней. Функционал сайта довольно широк. Сайт описывает кампанию по разработке различных цифровых продуктов. На сайте представлен широкий спектр возможностей. Здесь описаны основные преимущества данной кампании среди других в сфере их работы. На сайте есть меню отзывов в виде слайдера, присутствует панель прокрутки вверху страницы. На сайте есть блок с контактными данными. Сайт адаптирован под различные устройства.
-      </div>
+        <div class="collapse navbar-collapse ml-auto" id="navbarTogglerDemo03">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" onclick="Event(), scrollSlow('#aboutus')">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="Event(), scrollSlow('#projects')">Портфолио</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="Event(), scrollSlow('#contact')">Связаться с нами</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
+  </header>
+  <section class="firstSection">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 offset-md-3">
+          <div class="textInFirst">
+            <p id="textInFirst_1">Кто мы?</p>
+            <p id="textInFirst_2">Мы современная веб-студия. Разрабатываем сайты быстро и дёшево!</p>
+          </div>
+        </div>
+      </div>
 
-	</section>
-<script type="text/javascript">
-  $(document).ready(function(){
-  $('.bxslider').bxSlider();
-});
-    function nameOf(){
-    let element = document.getElementById('bxslider');
-    element.style.cursor = 'grabbing';
-  }
-    
-</script>
+      <div class="d-flex justify-content-center"><a href="#" class="btn" id="buttonInFirst" onclick="Event(), scrollSlow('#projects')">Наши работы</a></div>
+      <!-- Icons -->
+      <!-- <div class="firstDownDescription">
+                <div class="DownDescAll DownDesc1">
+                  <div class="DownDescIcon DownDescIcon1"></div>
+                  <p class="DownDescText">
+                    <p id="DownDescText_1">Дёшево</p>
+                    <p id="DownDescText_2">Мы делаем упор на доступность</p>
+                  </p>
+                </div>
+                <div class="DownDescAll DownDesc2">
+                  <div class="DownDescIcon DownDescIcon2"></div>
+                  <p class="DownDescText">
+                    <p id="DownDescText_1">Быстро</p>
+                    <p id="DownDescText_2">Заказы выполняются быстро</p>
+                  </p>
+                </div>
+                <div class="DownDescAll DownDesc3">
+                  <div class="DownDescIcon DownDescIcon3"></div>
+                  <p class="DownDescText">
+                    <p id="DownDescText_1">Качественно</p>
+                    <p id="DownDescText_2">Качество выполнения на высоте</p>
+                  </p>
+                </div>
+              </div> -->
+      <div class="scrollTo d-none d-md-flex">
+        <div class="scrollText">Прокрутите, чтобы продолжить</div>
+        <div class="mouseIcon"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secondSection" id="aboutus">
+    <div class="secondSectionTextAbout mb-5">О нас</div>
+
+    <div class="container secondSectionContent">
+      <div class="row">
+        <div class="col-12 col-md-4 secondSectionContentAll">
+          <div class="col-6  offset-3 offset-md-1 col-md-10">
+            <div class="secondSectionContentImage secondSectionContentImage_1"><a href="https://vk.com/stasyambaru"
+                target="_blank" class="aVkImage"><i class="fa fa-vk" class="vkImage"></i></a></div>
+            <p class="secondSectionContentText">
+              <p class="secondSectionContentText_1">Станислав Козаченко</p>
+              <p class="secondSectionContentText_2">Front-End разработчик. Занимается версткой шаблона сайта и созданием
+                пользовательского интерфейса.</p>
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 secondSectionContentAll">
+          <div class="col-6  offset-3 offset-md-1 col-md-10">
+            <div class="secondSectionContentImage secondSectionContentImage_2"><a href="https://vk.com/im_false"
+                target="_blank" class="aVkImage"><i class="fa fa-vk" class="vkImage"></i></a></div>
+            <p class="secondSectionContentText">
+              <p class="secondSectionContentText_1">Евгений Корякин</p>
+              <p class="secondSectionContentText_2">Дизайнер. <br>Конструирует мир для пользователя - удобный и
+                симпатичный.
+              </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 secondSectionContentAll">
+          <div class="col-6 offset-3 offset-md-1 col-md-10">
+            <div class="secondSectionContentImage secondSectionContentImage_3"><a href="https://vk.com/dimasik339"
+                target="_blank" class="aVkImage"><i class="fa fa-vk" class="vkImage"></i></a></div>
+            <p class="secondSectionContentText">
+              <p class="secondSectionContentText_1">Дмитрий Селедкин</p>
+              <p class="secondSectionContentText_2">Back-End разработчик. Занимается базами данных, архитектурой,
+                программной логикой сайта.</p>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="thirdSection" id="projects">
+    <div class="secondSectionTextAbout">
+      Наши проекты
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="thirdSectionContent">
+          <div class="thirdSectionContentAll">
+            <div class="row">
+              <div class="col-12 col-md-4 offset-md-0">
+                <div class="imageOfSite mx-auto" id="imageOfSite_1" class="bggrad_1">
+                  <p class="kreo">Kreo</p>
+                </div>
+              </div>
+              <div class="col-10 offset-1 col-md-7 offset-md-0">
+                <div class="thirdSectionContentText">
+                  <p class="thirdSectionContentText_1">Kreo Layout</p>
+                  <p class="thirdSectionContentText_2">Этот сайт отлично подойдёт для описания любой организации. Он
+                    современен,
+                    мобилен, удобен в использовании. Здесь рассказывается об основных преимуществах этой организации.
+                    Есть
+                    меню
+                    обратной связи, меню отзывов в виде слайдера. Сайт адаптирован под различные устройства.</p>
+                  <a href="kreoabout.html" class="buttonOnThird btn col-4" id="buttonOnThird_1">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="thirdSectionContentAll">
+              <div class="row">
+                <div class="col-12 col-md-4 offset-md-0">
+                  <div class="imageOfSite mx-auto" id="imageOfSite_2" class="bggrad_1">
+                    <p class="kreo">Cool!</p>
+                  </div>
+                </div>
+                <div class="col-10 offset-1 col-md-7 offset-md-0">
+                  <div class="thirdSectionContentText">
+                    <p class="thirdSectionContentText_1">Cool!</p>
+                    <p class="thirdSectionContentText_2">Этот сайт отлично описыват мобильное приложение по всем параметрам. Здесь есть описание работы приложения, описание ценовой политики сервиса, FAQ, контактные данные. <br class="clearbr">Сайт рассказывает об основных преимуществах этого сервиса. <br class="clearbr">На сайте присутсвует меню отзывов в виде слайдера.</p>
+                    <a href="cool.html" class="buttonOnThird btn col-4" id="buttonOnThird_2">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="thirdSectionContentAll">
+            <div class="row">
+              <div class="col-12 col-md-4 offset-md-0">
+                <div class="imageOfSite mx-auto" id="imageOfSite_3" class="bggrad_1">
+                  <p class="kreo">Lucid</p>
+                </div>
+              </div>
+              <div class="col-10 offset-1 col-md-7 offset-md-0">
+                <div class="thirdSectionContentText">
+                  <p class="thirdSectionContentText_1">Lucid</p>
+                  <p class="thirdSectionContentText_2">Если у вас есть мобильное приложение, то этот сайт - идеальный вариант для описания и рекламы этого приложения. <br>Сайт оформлен современно, адапитирован под различные устройства. На сайте есть блок отзывов в виде слайдера, большое количество анимаций.</p>
+                  <a href="lucid.html" class="buttonOnThird btn col-4" id="buttonOnThird_3">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            </div>
+             <div class="thirdSectionContentAll">
+            <div class="row">
+              <div class="col-12 col-md-4 offset-md-0">
+                <div class="imageOfSite mx-auto" id="imageOfSite_4" class="bggrad_1">
+                  <p class="kreo">DafCraft</p>
+                </div>
+              </div>
+              <div class="col-10 offset-1 col-md-7 offset-md-0">
+                <div class="thirdSectionContentText">
+                  <p class="thirdSectionContentText_1">DafCraft</p>
+                  <p class="thirdSectionContentText_2">Сайт по проекту компьютерной игры Minecraft. Сайт проработал приблизительно год. Постоянный онлайн на сайте превышал 100 человек. <br>Сайт имел свой форум, личный кабинет, оплату, лотерею, магазин, обмен валют и покупку привилегий.</p>
+                  <a href="#" class="buttonOnThird btn col-4" id="buttonOnThird_4" onclick="Event()">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="thirdSectionContentAll">
+            <div class="row">
+              <div class="col-12 col-md-4 offset-md-0">
+                <div class="imageOfSite mx-auto" id="imageOfSite_5" class="bggrad_1">
+                  <p class="kreo" id="cloud">Cloud<br>Check</p>
+                </div>
+              </div>
+              <div class="col-10 offset-1 col-md-7 offset-md-0">
+                <div class="thirdSectionContentText">
+                  <p class="thirdSectionContentText_1">CloudCheck</p>
+                  <p class="thirdSectionContentText_2">Идея сайта - предотвратить кражу аккаунта игроков. Сайт основан на проверка аккаунта пользователя на наличие его в базах сервиса. <br>Присутсвуют платные услуги, которые улучшают и упрощают работу с сервисом. Сайт популярен в определенных кругах пользователей.</p>
+                  <a href="#" class="buttonOnThird btn col-4" id="buttonOnThird_5" onclick="Event()">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="fourthSection" id="contact">
+    <div class="secondSectionTextAbout">
+      Связаться с нами
+    </div>
+    <div class="fourthSectionContent">
+      <div class="fourthSectionContent_1">
+        <div class="fourthSectionContentText">Напишите нам на сайте</div>     
+        <textarea name="firsttext" class="firsttext" placeholder="Ваше имя"></textarea>
+        <textarea name="firsttext" class="firsttext" placeholder="Ваш E-mail"></textarea>   
+        <textarea name="firsttext" id="secondtext" placeholder="Описание заказа"></textarea>
+      
+        <a href="#" id="send" onclick="Event()">Отправить</a>
+      </div>
+      <div class="fourthSectionContent_2">
+        <div class="fourthSectionContent_All">
+          <div class="fourthSectionContentText">Напишите нам на почту</div>
+         <div class="fourthSectionContentTextContact">onlycoders@mail.ru</div>
+        </div>
+         <div class="fourthSectionContent_All" id="fsca_1">
+          <div class="fourthSectionContentText">Свяжитесь во Вконтакте</div>
+         <div class="fourthSectionContentTextContact"><a href="https://vk.com/onlycoders" target="_blank" id="sendvk" onclick="Event()">vk.com/onlycoders</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
+
 </html>
