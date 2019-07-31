@@ -65,7 +65,7 @@
 	margin: 0 5%;
 	transition: .2s;
 	border-radius: 10px;
-	background-color: #C4c4c4;
+	background-color: #E4E4E4;
 
 }
 a:hover {
@@ -73,7 +73,7 @@ a:hover {
 }
 .sources a i {
 	font-size: 3vh;
-	color: #FAFAFA;
+	color: #535353;
 	height: 52px;
 	width: 52px;
 	display: flex;
