@@ -7,10 +7,12 @@
 	font-family: GothamPro;
 	src: url(../fonts/GothamPro.ttf);
 }
-
+body {
+	background-color: #FAFAFA;
+}
 .firstSection {
 	height: 150vh;
-	background-color: #FAFAFA;
+	
 	
 }
 .back {
