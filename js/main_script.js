@@ -100,7 +100,11 @@ send.addEventListener('click', function(){
      icon: "success"
     });
   } else {
-    swal("Hello!");
+    swal({
+    title: "Вы можете связаться c нами:",
+    text: "Группа VK: vk.com/onlycoders\n\n Наша почта: onlycoders@mail.ru",
+     icon: "success"
+    });
   }
 });
 });
