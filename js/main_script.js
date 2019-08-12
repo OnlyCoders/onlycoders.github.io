@@ -60,7 +60,8 @@ jQuery(document).ready(function(){
 			let per = windowScroll / windowHeight * 100;
 			progress.style.width = per + '%';
 			}
-	
+		
+
 });
 
 function Event(){
@@ -79,3 +80,27 @@ function scrollSlow(id){
 	function ChangePadding(){
 		$('.textInFirst').toggleClass('textInFirst_menu');
 	}
+
+
+//
+let send = document.getElementById('send');
+send.addEventListener('click', function(){
+	swal({
+  	title: "GitHub Pages != PHP",
+ 	text: "Сервис GitHub Pages, где и размещён этот сайт, не поддерживает PHP, поэтому работа с формой обратной связи невозможна. ",
+  	icon: "error",
+ 	
+ 	 
+})
+.then((willDelete) => {
+  if (willDelete) {
+    swal({
+    title: "Вы можете связаться c нами:",
+    text: "Группа VK: vk.com/onlycoders\n\n Наша почта: onlycoders@mail.ru",
+     icon: "success"
+    });
+  } else {
+    swal("Hello!");
+  }
+});
+});
