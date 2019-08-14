@@ -83,7 +83,8 @@ function scrollSlow(id){
 
 
 //
-let send = document.getElementById('send');
+
+let send = document.getElementById('contactbtn');
 send.addEventListener('click', function(){
 	swal({
   	title: "GitHub Pages != PHP",
@@ -97,13 +98,45 @@ send.addEventListener('click', function(){
     swal({
     title: "Вы можете связаться c нами:",
     text: "Группа VK: vk.com/onlycoders\n\n Наша почта: onlycoders@mail.ru",
-     icon: "success"
+    icon: "success",
+    button: "Закрыть"
     });
   } else {
     swal({
     title: "Вы можете связаться c нами:",
     text: "Группа VK: vk.com/onlycoders\n\n Наша почта: onlycoders@mail.ru",
-     icon: "success"
+    icon: "success",
+    button: "Закрыть"
+    });
+  }
+});
+});
+
+//
+
+let sendSecond = document.getElementById('contancttop');
+sendSecond.addEventListener('click', function(){
+	swal({
+  	title: "GitHub Pages != PHP",
+ 	text: "Сервис GitHub Pages, где и размещён этот сайт, не поддерживает PHP, поэтому работа с формой обратной связи невозможна. ",
+  	icon: "error",
+ 	
+ 	 
+})
+.then((willDelete) => {
+  if (willDelete) {
+    swal({
+    title: "Вы можете связаться c нами:",
+    text: "Группа VK: vk.com/onlycoders\n\n Наша почта: onlycoders@mail.ru",
+    icon: "success",
+    button: "Закрыть"
+    });
+  } else {
+    swal({
+    title: "Вы можете связаться c нами:",
+    text: "Группа VK: vk.com/onlycoders\n\n Наша почта: onlycoders@mail.ru",
+    icon: "success",
+    button: "Закрыть"
     });
   }
 });
