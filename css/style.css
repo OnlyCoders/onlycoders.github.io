@@ -555,7 +555,7 @@
 	height: 40vh;
 } */
 footer {
-	height: 20vh;
+	height: 24vh;
 	background-color: #080D10;
 	display: flex;
 	justify-content: center;
@@ -598,7 +598,7 @@ footer {
 	cursor: pointer;
 }
 #vk {
-	color: #fff;
+	color: #f1f1f1;
 	margin-top: 5%;
 }
 
