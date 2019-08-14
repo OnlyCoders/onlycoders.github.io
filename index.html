@@ -3,7 +3,6 @@
 
 <head>
   <title>Only Coders</title>
-
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html">
   <meta name="description" content="Just a site where there is something that should be there.">
@@ -45,7 +44,7 @@
               <a class="nav-link" href="#" onclick="Event(), scrollSlow('#projects')">Портфолио</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" onclick="Event(), scrollSlow('#contact')">Связаться с нами</a>
+              <a class="nav-link" href="#" onclick="Event()" id="contancttop">Связаться с нами</a>
             </li>
           </ul>
         </div>
@@ -223,7 +222,7 @@
               <div class="col-10 offset-1 col-md-7 offset-md-0">
                 <div class="thirdSectionContentText">
                   <p class="thirdSectionContentText_1">CloudCheck</p>
-                  <p class="thirdSectionContentText_2">Идея сайта - предотвратить кражу аккаунта игроков. Сайт основан на проверка аккаунта пользователя на наличие его в базах сервиса. <br>Присутсвуют платные услуги, которые улучшают и упрощают работу с сервисом. Сайт популярен в определенных кругах пользователей.</p>
+                  <p class="thirdSectionContentText_2">Идея сайта - предотвратить кражу аккаунта игроков. Сайт основан на проверка аккаунта пользователя на наличие его в базах сервиса. Присутсвуют платные услуги, которые улучшают и упрощают работу с сервисом. Сайт популярен в определенных кругах пользователей.</p>
                   <a href="cloudchecker.html" class="buttonOnThird btn col-4" id="buttonOnThird_5">Подробнее</a>
                 </div>
               </div>
@@ -234,30 +233,45 @@
     </div>
   </section>
   <section class="fourthSection" id="contact">
-    <div class="secondSectionTextAbout">
+    <!-- <div class="secondSectionTextAbout">
       Связаться с нами
-    </div>
-    <div class="fourthSectionContent">
-      <div class="fourthSectionContent_1">
-        <div class="fourthSectionContentText">Напишите нам на сайте</div>     
-        <textarea name="firsttext" class="firsttext" placeholder="Ваше имя"></textarea>
-        <textarea name="firsttext" class="firsttext" placeholder="Ваш E-mail"></textarea>   
-        <textarea name="firsttext" id="secondtext" placeholder="Описание заказа"></textarea>
-      
-        <a href="#" id="send" onclick="Event()">Отправить</a>
-      </div>
-      <div class="fourthSectionContent_2">
-        <div class="fourthSectionContent_All">
-          <div class="fourthSectionContentText">Напишите нам на почту</div>
-         <div class="fourthSectionContentTextContact">onlycoders@mail.ru</div>
-        </div>
-         <div class="fourthSectionContent_All" id="fsca_1">
-          <div class="fourthSectionContentText">Свяжитесь во Вконтакте</div>
-         <div class="fourthSectionContentTextContact"><a href="https://vk.com/onlycoders" target="_blank" id="sendvk" onclick="Event()">vk.com/onlycoders</a></div>
-        </div>
-      </div>
-    </div>
+    </div>     
+    Прежний вариант изложен ниже -->
+   <!--  <div class="fourthSectionContent">
+     <div class="fourthSectionContent_1">
+       <div class="fourthSectionContentText">Напишите нам на сайте</div>     
+       <textarea name="firsttext" class="firsttext" placeholder="Ваше имя"></textarea>
+       <textarea name="firsttext" class="firsttext" placeholder="Ваш E-mail"></textarea>   
+       <textarea name="firsttext" id="secondtext" placeholder="Описание заказа"></textarea>
+     
+       <a href="#" id="send" onclick="Event()">Отправить</a>
+     </div>
+     <div class="fourthSectionContent_2">
+       <div class="fourthSectionContent_All">
+         <div class="fourthSectionContentText">Напишите нам на почту</div>
+        <div class="fourthSectionContentTextContact">onlycoders@mail.ru</div>
+       </div>
+        <div class="fourthSectionContent_All" id="fsca_1">
+         <div class="fourthSectionContentText">Свяжитесь во Вконтакте</div>
+        <div class="fourthSectionContentTextContact"><a href="https://vk.com/onlycoders" target="_blank" id="sendvk" onclick="Event()">vk.com/onlycoders</a></div>
+       </div>
+     </div>
+   </div> -->
   </section>
+  <footer>
+   <div class="textInFooter">
+     <div class="textInFooter_1">
+       <p>OnlyCoders 2019</p>
+       <p>All Rigths Reserved</p>
+       <a href="https://vk.com/onlycoders" target="_blank" id='vk'><i class="fa fa-vk"></i></a>
+     </div>
+     <div class="textInFooter_2">
+       <p id="contactbtn">Связаться с нами</p>
+       <p onclick="scrollSlow('#aboutus')">Наша команда</p>
+       <p onclick="scrollSlow('#projects')">Портфолио</p>
+     </div>
+   </div>
+  </footer>
 </body>
 
 </html>
